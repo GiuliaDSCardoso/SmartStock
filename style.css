@@ -1,0 +1,250 @@
+body {
+    background-color: #ffffff;
+}
+
+.nav {
+    
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%; /* Adiciona um padding para responsividade */
+}
+
+.Logo img {
+    margin-left: 2%;
+    height: 100%;
+}
+
+.Menu {
+    display: flex; /* Exibe o menu como flex */
+    gap: 2.5vh; /* Ajuste do espaçamento entre os itens */
+}
+
+.menu-icon {
+    display: none; /* Esconde o ícone do menu por padrão */
+}
+
+@media (max-width: 1200px) {
+    .Menu {
+        display: none; /* Esconde o menu em telas menores */
+    }
+    .menu-icon {
+        display: block; /* Mostra o ícone do menu em telas menores */
+        cursor: pointer; /* Muda o cursor para pointer ao passar sobre o ícone */
+    }
+}
+
+.Menu h3 {
+    font-family: 'Lato', sans-serif;
+    font-size:25px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.479);
+}
+.menu-overlay {
+    display: none; /* Esconde o overlay por padrão */
+    position: fixed; /* Fixa na tela */
+    top: 0;
+    right: 0; /* Posiciona o overlay no canto superior direito */
+    width:100%; /* Define a largura do menu */
+    height:100%; /* Ocupa toda a altura */
+    z-index: 1000; /* Coloca acima de outros elementos */
+    padding: 20px; /* Adiciona espaçamento interno */
+    
+}
+
+.menu-content {
+    background-color: #ffffff; /* Cor de fundo do menu */
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 10px;
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+.menu-icon {
+    
+    position: fixed; /* Fixa o ícone na tela */
+    top: 25px; /* Distância do topo */
+    right: 40px; /* Distância da direita */
+    z-index: 1001; /* Coloca acima do overlay */
+    cursor: pointer; /* Muda o cursor para pointer ao passar sobre o ícone */
+}
+
+hr{
+    color: rgba(250, 250, 250, 0.082);
+}
+
+.menu-content h3 {
+    padding-top: 20px;
+    margin: 10px 0; /* Margem entre os itens */
+    font-family: 'Lato', sans-serif;
+}
+
+
+.container1 {
+    background-color: #005EA9;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.container1 img {
+    
+    width: 60%;
+    height: 100%;
+}
+
+.Logo2 img {
+    display: block;
+    margin: 0;
+    width: 100%; /* Tamanho ajustável */
+    max-width: 409px; /* Limite máximo para a logo */
+    height: auto;
+    margin-left: -10%;
+}
+
+@media (max-width: 768px) {
+    .Logo2 img {
+        width: 100%; /* Ajusta a largura para telas menores */
+        max-width: 300px; /* Reduz o limite máximo em telas menores */
+        
+    }
+
+}
+
+@media (max-width: 480px) {
+    .Logo2 img {
+        width:100%; /* Ainda mais flexível em telas muito pequenas */
+        max-width: 250px; /* Reduz o limite máximo */
+    }
+}
+
+
+.texto1 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 20%;
+    max-width: 500px;
+    
+}
+
+.aboutus h1{
+    color: #005EA9;
+    font-family: 'Lato', sans-serif;
+    text-align: center; 
+    font-size: xx-large;
+    padding-top: 20%;
+}
+
+.aboutus h2{
+    color: rgb(0, 0, 0);
+    font-family: 'Lato', sans-serif;
+    text-align:justify; 
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    
+    
+}
+.Armazenagem{
+    background-color: #005EA9;
+    width:200%;
+    margin-left: -10px;
+    margin-right: -10px;
+    height: 110vh;
+    margin-top: 20vh;
+}
+a{
+    color: rgba(0, 0, 0, 0.719);
+    text-decoration: none;
+}
+.highlight {
+    transition: color 0.3s ease, transform 0.3s ease; /* Transição suave */
+}
+
+.highlight:hover {
+    color: #005EA9; /* Cor que deseja ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do texto */
+}
+
+
+/*contato*/
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    margin-top: 50px;
+    
+}
+
+.contact-container {
+    
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1rem;
+    color: #005EA9;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #005EA9;
+    outline: none;
+}
+
+button {
+    background-color: #005EA9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004080;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #033055;
+    margin-top: 20px;
+    color: white;
+}
