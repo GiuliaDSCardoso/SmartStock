@@ -9,7 +9,7 @@ SmartStock é uma solução inovadora desenvolvida por um grupo de estudantes do
 - **HTML**: Estruturação das páginas web.
 - **CSS**: Estilização e design responsivo.
 - **JavaScript**: Interatividade e funcionalidades dinâmicas.
-- **[Adicione outras tecnologias ou bibliotecas conforme necessário]**
+
 
 ## Estrutura do Projeto
 
